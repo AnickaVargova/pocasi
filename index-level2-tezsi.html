@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Počasí</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/weather-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-level2-tezsi.css">
+</head>
+
+<body>
+
+    <h1>Počasí</h1>
+
+    <div class="tlacitka">
+        <button id='aktualni' class="tlacitko">Aktuální poloha</button>
+        <button id='mesto1' class="tlacitko">Praha</button>
+        <button id='mesto2' class="tlacitko">Paříž</button>
+        <button id='mesto3' class="tlacitko">Český Krumlov</button>
+    </div>
+
+    <div id='ctverec'>
+        <div id='barevny'>
+            <h2 id='mesto'></h2>
+            <div id='pocasi'>
+
+                <div id='kontejner1' class='dnes'>
+                    <div id='teplota' class='levy'>
+                        <div id='stupne'></div>
+                        <div id='celsius'>°C</div>
+                    </div>
+                    <div id='ikona' class='pravy'></div>
+                </div>
+
+                <div id=kontejner2 class='dnes'>
+                    <div id='popis' class='levy'></div>
+                    <div id='zvuk' class='pravy'>
+                        <button id='play'>Play</button>
+                        <button id='pause'>Pause</button>
+                    </div>
+                </div>
+
+                <div id='kontejner3' class='dnes'>
+                    <div id='vitr' class='levy'>
+                        <div class='text'>Vítr</div>
+                        <div class='hodnota'></div>
+                    </div>
+                    <div id='vlhkost' class='pravy'>
+                        <div class='text'>Vlhkost</div>
+                        <div class='hodnota'></div>
+                    </div>
+                </div>
+
+                <div id=kontejner4 class='dnes'>
+                    <div id='vychod' class='levy'>
+                        <div class='text'>Východ slunce</div>
+                        <div class='hodnota'></div>
+                    </div>
+                    <div id='zapad' class='pravy'>
+                        <div class='text'>Západ slunce</div>
+                        <div class='hodnota'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id=kontejner5 class=predpoved>
+            <div id='datumPredpoved1' class='levy datumPredpoved'>
+            </div>
+            <div id='predpoved1' class='pravy'>
+                <div class='ikona' id='ikonaPredpoved1'></div>
+                <div id='teplotaPredpoved1' class='teplota'></div>
+            </div>
+        </div>
+
+        <div id=kontejner6 class=predpoved>
+            <div id='datumPredpoved2' class='levy datumPredpoved'>
+            </div>
+            <div id='predpoved2' class='pravy'>
+                <div class='ikona' id='ikonaPredpoved2'></div>
+                <div id='teplotaPredpoved2' class='teplota'></div>
+            </div>
+        </div>
+
+        <div id=kontejner7 class=predpoved>
+            <div id='datumPredpoved3' class='levy datumPredpoved'>
+            </div>
+            <div id='predpoved3' class='pravy'>
+                <div class='ikona' id='ikonaPredpoved3'></div>
+                <div id='teplotaPredpoved3' class='teplota'></div>
+            </div>
+        </div>
+
+        <div id=kontejner8 class=predpoved>
+            <div id='datumPredpoved4' class='levy datumPredpoved'>
+            </div>
+            <div id='predpoved4' class='pravy'>
+                <div class='ikona' id='ikonaPredpoved4'></div>
+                <div id='teplotaPredpoved4' class='teplota'></div>
+            </div>
+        </div>
+
+    </div>
+    <audio id="thunder" src="sounds/thunder.mp3"></audio>
+    <audio id="drizzle" src="sounds/drizzle.mp3"></audio>
+    <audio id="rain" src="sounds/rain.mp3"></audio>
+    <audio id="snowing" src="sounds/snowing.mp3"></audio>
+    <audio id="atmosphere" src="sounds/atmosphere.mp3"></audio>
+    <audio id="sunny" src="sounds/sunny.mp3"></audio>
+    <audio id="cloudy" src="sounds/cloudy.mp3"></audio>
+
+
+
+    <!--
+    Soubor "weather-icons.js" jsem zkopírovala na konec index.js. Zdá se mi, že je pak načítání rychlejší.
+  -->
+    <!-- <script src="weather-icons.js"></script> -->
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

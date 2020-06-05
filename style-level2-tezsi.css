@@ -1,0 +1,199 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: inherit;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding: 1em;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 25px;
+}
+
+#ctverec {
+    width: 350px;
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+#barevny {
+    padding-top: 10px;
+    background-image: linear-gradient(to bottom, #ff3e78, #ffbd2e);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0;
+}
+
+#ctverec h2 {
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.dnes {
+    display: flex;
+}
+
+.predpoved {
+    background-color: white;
+    color: grey;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+}
+
+.predpoved:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+}
+
+.levy,
+.pravy {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+#teplota {
+    font-size: 25px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#stupne {
+    font-size: 60px;
+}
+
+#popis {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#ikona {
+    font-size: 64px;
+    justify-self: center;
+    align-self: center;
+}
+
+#kontejner2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#zvuk * {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-bottom: 2px;
+    font-family: Montserrat, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#zvuk *:hover,
+#zvuk *:focus,
+#zvuk *:active {
+    background-color: lightgrey;
+}
+
+.hodnota {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hodnota:last-child {
+    margin-bottom: 15px;
+}
+
+#kontejner4 {
+    padding-bottom: 10px;
+}
+
+.datumPredpoved {
+    align-self: center;
+}
+
+.ikona {
+    color: #ff3e78;
+    font-size: 20px;
+}
+
+.predpoved .pravy {
+    display: flex;
+    justify-content: space-around;
+}
+
+.teplota {
+    font-size: 16px;
+}
+
+.tlacitka {
+    width: 350px;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+.tlacitko {
+    flex: 1 1 auto;
+    padding: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: #ff3e78 linear-gradient(to top, #ff3e78, #777bf0);
+    color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.tlacitko:hover,
+.tlacitko:focus,
+.tlacitko:active {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.tlacitko+.tlacitko {
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tlacitko:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.tlacitko:last-child {
+    border-radius: 0 5px 5px 0;
+}
